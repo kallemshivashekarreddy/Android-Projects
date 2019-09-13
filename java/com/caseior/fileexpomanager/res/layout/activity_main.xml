@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <include layout="@layout/custom_toolbar" />
+
+        <Button
+            android:id="@+id/bt_back"
+            android:layout_width="50dp"
+            android:layout_height="61dp"
+            android:layout_below="@+id/customtoolbar"
+            android:layout_alignParentLeft="true"
+
+
+            android:background="@drawable/back" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardTv"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_toRightOf="@id/bt_back"
+            android:layout_below="@+id/customtoolbar"
+
+
+
+            app:cardCornerRadius="24dp">
+
+            <TextView
+                android:id="@+id/curDir_text"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignTop="@+id/cardTv"
+                android:layout_alignBottom="@+id/cardTv"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:text="@string/curDirPath"
+                android:textSize="20sp" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardlist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/cardBt"
+            android:layout_below="@id/cardTv"
+            app:cardCornerRadius="24dp">
+
+            <ListView
+                android:id="@+id/lv_listItems"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/Button_addFile"
+                android:layout_below="@+id/cardTv"
+
+                android:layout_alignStart="@+id/cardlist"
+                android:layout_alignTop="@+id/cardlist"
+                android:padding="5dp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardBt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:cardCornerRadius="24dp">
+
+            <Button
+                android:id="@+id/Button_addFile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:padding="5dp"
+                android:text="@string/button_text"
+
+                android:textSize="24sp"
+
+                />
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+</FrameLayout>

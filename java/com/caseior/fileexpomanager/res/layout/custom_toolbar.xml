@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#85E3DFB3"
+    android:id="@+id/customtoolbar"
+    android:theme="@style/AppTheme">
+    <de.hdodenhof.circleimageview.CircleImageView
+
+        android:id="@+id/profile_image"
+        android:layout_width="56dp"
+        android:layout_height="wrap_content"
+        app:civ_border_width="1dp"
+        android:src="@drawable/caseiorofficial"
+        app:civ_border_color="#F80101"
+        android:padding="5dp"
+        app:civ_circle_background_color="@color/colorPrimary"
+        />
+    <TextView
+        android:id="@+id/app_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/app_name"
+        android:padding="5dp"
+        style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+        android:gravity="center_vertical"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/popup_image"
+        android:src="@android:drawable/ic_media_next"
+
+/>
+</androidx.appcompat.widget.Toolbar>
