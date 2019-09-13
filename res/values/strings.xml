@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FileExpoManager</string>
+    <string name="curDirPath">Path:</string>
+    <string name="button_text">add</string>
+</resources>
